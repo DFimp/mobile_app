@@ -7,69 +7,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textViewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Калькулятор оплаты услуг ЖКХ"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_gravity="center_horizontal"/>
-
-        <EditText
-            android:id="@+id/editTextArea"
+        <!-- Небо -->
+        <View
+            android:id="@+id/sky"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Введите площадь квартиры (кв.м)"
-            android:inputType="numberDecimal"/>
+            android:layout_height="match_parent"
+            android:background="@drawable/sky" />
 
-        <EditText
-            android:id="@+id/editTextServicePrice"
+        <!-- Солнце -->
+        <ImageView
+            android:id="@+id/sun"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sun" />
+
+        <!-- Поляна -->
+        <View
+            android:id="@+id/grass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Цена за услугу (руб.)"
-            android:inputType="numberDecimal"/>
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/grass" />
 
-        <CheckBox
-            android:id="@+id/checkBoxHeating"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Отопление"/>
-
-        <CheckBox
-            android:id="@+id/checkBoxWater"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Водоснабжение"/>
-
-        <Button
-            android:id="@+id/buttonCalculate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Рассчитать"/>
-
-        <ImageButton
-            android:id="@+id/buttonReset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_revert"
-            android:contentDescription="Сброс"/>
-
-        <TextView
-            android:id="@+id/textViewResult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Стоимость: 0 руб."
-            android:textSize="16sp"
-            android:paddingTop="16dp"/>
-    </LinearLayout>
-
+        <!-- Колобок -->
+        <ImageView
+            android:id="@+id/kolobok"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/kolobok" />
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
