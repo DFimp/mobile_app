@@ -13,7 +13,7 @@
     <!-- Левый глаз -->
     <item
         android:left="28dp"
-        android:top="30dp">
+        android:top="28dp">
         <shape android:shape="oval">
             <solid android:color="#000000" /> <!-- Черный цвет глаза -->
             <size android:width="10dp" android:height="10dp" />
@@ -22,7 +22,7 @@
 
     <!-- Правый глаз -->
     <item
-        android:left="62dp"
+        android:right="60dp"
         android:top="30dp">
         <shape android:shape="oval">
             <solid android:color="#000000" />
